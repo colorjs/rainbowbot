@@ -1,0 +1,23 @@
+{
+  "name":    "rainbow",
+  "version": "0.0.1",
+
+  "dependencies": {
+    "async":           "0.1.x",
+    "coffee-script":   "1.2.x",
+    "dynamo":          "0.2.x",
+    "express":         "3.0.x",
+    "jade":            "0.26.x",
+    "stylus":          "0.32.x",
+    "nib":             "0.9.x",
+    "nodemon":         "0.6.18",
+    "request":         "2.12.x",
+    "thief":           "0.1.0",
+    "canvas":          "1.0.0"
+  },
+
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.1.x"
+  }
+}
