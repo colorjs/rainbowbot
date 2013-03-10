@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ROOT=$(dirname $(dirname $0))
+PATH="node_modules/.bin:$PATH"
+
+cd $ROOT
+
+if [ "${NODE_ENV}" == "production" ]; then
+  exec node web.js
+else
+  exec nodemon -w . web.js
+fi
