@@ -6,7 +6,7 @@ color = require "onecolor"
 
 class Rainbow
 
-  @paletteSize: 5
+  @paletteSize: 10
 
   @get: (url, callback) ->
 

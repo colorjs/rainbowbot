@@ -1,0 +1,8 @@
+extends layout
+block content
+
+  img(src=url)
+
+  ul.hex
+    each hex in palette.hex
+      li(style="background-color:#{hex}")
