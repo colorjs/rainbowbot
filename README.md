@@ -18,7 +18,6 @@ brew install cairo
 brew install jpg
 ```
 
-## Sample Image URLs
+## Sample URL
 
-- http://25.media.tumblr.com/tumblr_marxxfg9IB1rh3bmco1_500.png
-
+- http://localhost:5000/mix?url=http://25.media.tumblr.com/tumblr_marxxfg9IB1rh3bmco1_500.png

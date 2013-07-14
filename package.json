@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "onecolor": 	     "2.3.2",
-    "canvas":          "1.0.x",
+    "canvas":          "~1.0.3",
     "async":           "0.1.x",
     "cors":            "0.0.4",
     "coffee-script":   "1.2.x",

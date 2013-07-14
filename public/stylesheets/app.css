@@ -1,9 +1,15 @@
 body {
   font-family: 'helvetica neue';
+  padding: 40px;
 }
 h1 {
-  font-family: "bebas-neue";
+  font-family: "din-condensed-web";
+  text-transform: uppercase;
   color: #ccc;
+}
+img {
+  max-width: 640px;
+  height: auto;
 }
 ul.hex {
   list-style: none;
@@ -16,7 +22,7 @@ ul.hex {
 ul.hex > li {
   display: block;
   float: left;
-  width: 50px;
-  height: 20px;
-  margin: 5px;
+  width: 80px;
+  height: 30px;
+  margin: 0 0 0 0;
 }
