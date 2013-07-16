@@ -2,7 +2,7 @@ quantize = require "./quantize.js"
 http = require "http"
 fs = require "fs"
 Canvas = require "canvas"
-color = require "onecolor"
+chroma = require "chroma-js"
 
 class Rainbow
 
@@ -56,16 +56,21 @@ class Rainbow
       cmap = quantize(pixelArray, Rainbow.paletteSize)
       raw_palette = cmap.palette()
 
-      out = {}
-      out.hex = []
-      out.rgba = []
+      out =
+        hex: []
+        rgb: []
+        hsv: []
+        hsl: []
+        lab: []
+        lch: []
       for rgb in raw_palette
-        b = rgb.pop()
-        g = rgb.pop()
-        r = rgb.pop()
-        fmt = "rgb(#{r}, #{g}, #{b})"
-        out.hex.push color(fmt).hex().toUpperCase()
-        out.rgba.push color(fmt).cssa()
+        color = chroma.color(rgb)
+        out.hex.push color.hex()  # "#FF0000"
+        out.rgb.push color.rgb()  # [255, 0, 0]
+        out.hsv.push color.hsv()  # [0, 1, 1]
+        out.hsl.push color.hsl()  # [0, 1, 0.5]
+        out.lab.push color.lab()  # [53.2407, 80.0924, 67.2031]
+        out.lch.push color.lch()  # [53.2407, 104.5517, 39.9990]
 
       callback(out)
 
