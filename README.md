@@ -3,10 +3,25 @@ Rainbowbot
 
 A webservice for extracting colors from images.
 
+![Chicken Colors](https://s3.amazonaws.com/f.cl.ly/items/431b1d283D1U2L441z1w/chicken-colors.png)
+
 ## API
 
-```sh
-# In the works..
+Get a JSON palette:
+
+[/?url=http://f.cl.ly/items/1n1c1P0I2U3O2r3n0H0D/chicken.jpg](http://rainbowbot.herokuapp.com/?url=http://f.cl.ly/items/1n1c1P0I2U3O2r3n0H0D/chicken.jpg)
+
+Or view the palette in your browser:
+
+[/show?url=http://f.cl.ly/items/1n1c1P0I2U3O2r3n0H0D/chicken.jpg](http://rainbowbot.herokuapp.com/show?url=http://f.cl.ly/items/1n1c1P0I2U3O2r3n0H0D/chicken.jpg)
+
+## Deployment to Heroku
+
+Use mojodna's buildpack that gives you the Cairo dependency:
+
+```
+heroku config:set BUILDPACK_URL=git://github.com/mojodna/heroku-buildpack-nodejs.git#cairo
+git push heroku
 ```
 
 ## Devevelopment (OS X)
@@ -17,7 +32,3 @@ If you're on Mountain Lion, you'll need to install [XQuartz](https://xquartz.mac
 brew install cairo
 brew install jpg
 ```
-
-## Sample URL
-
-- http://localhost:5000/mix?url=http://25.media.tumblr.com/tumblr_marxxfg9IB1rh3bmco1_500.png
