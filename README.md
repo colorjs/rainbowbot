@@ -24,7 +24,7 @@ heroku config:set BUILDPACK_URL=git://github.com/mojodna/heroku-buildpack-nodejs
 git push heroku
 ```
 
-## Devevelopment (OS X)
+## Development (OS X)
 
 If you're on Mountain Lion, you'll need to install [XQuartz](https://xquartz.macosforge.org).
 
