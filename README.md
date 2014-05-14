@@ -17,11 +17,9 @@ Or view the palette in your browser:
 
 ## Deployment to Heroku
 
-Use mojodna's buildpack that gives you the Cairo dependency:
-
 ```
-heroku config:set BUILDPACK_URL=git://github.com/mojodna/heroku-buildpack-nodejs.git#cairo
-git push heroku
+npm install app.json --global
+app.json deploy zeke/rainbowbot
 ```
 
 ## Devevelopment (OS X)

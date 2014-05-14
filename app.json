@@ -5,9 +5,7 @@
   "website": "https://rainbowbot.herokuapp.com/",
   "repository": "https://github.com/zeke/rainbowbot",
   "logo": "https://rainbowbot.herokuapp.com/logo.png",
-  "addons": [],
   "env": {
-    "BUILDPACK_URL": "git://github.com/mojodna/heroku-buildpack-nodejs.git#cairo",
-    "PATH": "bin:node_modules/.bin:/usr/local/bin:/usr/bin:/bin"
+    "BUILDPACK_URL": "https://github.com/mojodna/heroku-buildpack-multi.git#build-env"
   }
 }
