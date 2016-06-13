@@ -22,7 +22,7 @@ npm install app.json --global
 app.json deploy zeke/rainbowbot
 ```
 
-## Devevelopment (OS X)
+## Development (OS X)
 
 If you're on Mountain Lion, you'll need to install [XQuartz](https://xquartz.macosforge.org).
 
