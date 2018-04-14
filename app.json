@@ -3,7 +3,7 @@
   "description": "A webservice that extracts colors from images",
   "keywords": ["images","color","design","cairo"],
   "website": "https://rainbowbot.herokuapp.com/",
-  "repository": "https://github.com/zeke/rainbowbot",
+  "repository": "https://github.com/colorjs/rainbowbot",
   "logo": "https://rainbowbot.herokuapp.com/logo.png",
   "env": {
     "BUILDPACK_URL": "https://github.com/mojodna/heroku-buildpack-multi.git#build-env"
